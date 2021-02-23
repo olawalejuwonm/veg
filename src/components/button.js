@@ -3,7 +3,7 @@ import { colors } from "../styles/const";
 import { StyleSheet, Button, View } from "react-native";
 
 export const CustomButton = ({ children, onPress, title }) => (
-  <Button onPress={onPress} title={title} color={"white"}>
+  <Button onPress={onPress} title={title} color={"black"}>
     <View style={StyleSheet.button}>{children}</View>
   </Button>
 );

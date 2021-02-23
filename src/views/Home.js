@@ -7,22 +7,23 @@ import { colors } from "../styles/const";
 
 export const Home = props => {
   return (
-    <ImageBackground
-      style={styles.container}
-      source={require("../../assets/background.jpg")}
-    >
+   
+    <View style={styles.container}>
       <View style={styles.titleContainer}>
-        <Title>Veggiepe</Title>
+        <Title>Food Tech</Title>
       </View>
       <View style={styles.buttonContainer}>
         <CustomButton
           title="Start"
           onPress={() => props.navigation.navigate("List")}
         />
-      </View>
-    </ImageBackground>
+      </View></View>
   );
 };
+// <ImageBackground
+//   style={styles.container}
+//   source={require("../../assets/background.jpg")}
+// >    </ImageBackground>
 
 const styles = StyleSheet.create({
   container: {
